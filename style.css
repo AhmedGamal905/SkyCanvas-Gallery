@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playwrite AU VIC', sans-serif;
+    background-color: beige;
+}
+
+.my-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.my-header h1 {
+    color: whitesmoke;
+    margin-right: auto;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color 0.5s;
+}
+
+.links a:hover {
+    color: wheat;
+}
+
+.my-header-section-first {
+    background-image: url('resources/img/sky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 580px;
+}
+
+.inspirational-quote {
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.art-section {
+    height: auto;
+    background-color: beige;
+}
+
+.art-section h1 {
+    color: darkcyan;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.image-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.image-items:hover {
+    color: darkgrey;
+}
+
+.image-items img {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+}
+
+
+.about-me-section {
+    height: auto;
+    background-color: darkcyan;
+    flex-direction: column;
+}
+
+.about-me-section p {
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.about-me-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.about-me-items {
+    width: 300px;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+.about-me-items img {
+    width: 100%;
+    height: 500px;
+}
+
+.about-me-items-des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-items-des h2 {
+    font-size: medium;
+    color: #000;
+    text-align: center;
+}
+
+.about-me-items-des p {
+    font-size: small;
+    color: darkslategrey;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p,
+h2 {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+    padding-inline: 10px;
+}
+
+.footer-links a:hover {
+    color: gray;
+}
+
+
+@media (max-width: 1000px) {
+    .gallery-container {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .about-me-content {
+        flex-direction: column;
+    }
+
+    .my-header {
+        flex-direction: column;
+    }
+
+    .image-items img {
+        width: 150px;
+        height: 225px;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery-container {
+        flex-direction: column;
+    }
+
+    .about-me-content {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .my-header {
+        flex-direction: column;
+    }
+
+    .image-items img {
+        width: 100px;
+        height: 150px;
+    }
+}
